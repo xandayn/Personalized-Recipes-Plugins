@@ -1,5 +1,6 @@
 package common.xandayn.personalizedrecipes_plugins;
 
+import common.xandayn.personalizedrecipes_plugins.recipe.TestRecipeHandler;
 import common.xandayn.personalrecipes.plugin.annotation.PersonalizedRecipesPlugin;
 import common.xandayn.personalrecipes.recipe.RecipeRegistry;
 
@@ -10,8 +11,9 @@ public class TestPlugin {
     private static TestPlugin INSTANCE;
 
     @PersonalizedRecipesPlugin.Initialize
-    public void initialize(RecipeRegistry recipeRegistry){
-        recipeRegistry.registerRecipeHandler(null);
+    public void initialize(){
+        System.out.println("Testing");
+        RecipeRegistry.INSTANCE.registerRecipeHandler(new TestRecipeHandler());
     }
 
 }

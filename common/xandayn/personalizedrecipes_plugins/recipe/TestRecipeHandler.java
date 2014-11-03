@@ -1,6 +1,6 @@
 package common.xandayn.personalizedrecipes_plugins.recipe;
 
-import common.xandayn.personalrecipes.client.gui.recipe.ShapelessRecipeGUIComponent;
+import common.xandayn.personalizedrecipes_plugins.client.gui.recipe.TestRecipeGUIComponent;
 import common.xandayn.personalrecipes.recipe.CustomRecipeHandler;
 import common.xandayn.personalrecipes.recipe.data.RecipeData;
 
@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class TestRecipeHandler extends CustomRecipeHandler {
 
     public TestRecipeHandler() {
-        super(new ShapelessRecipeGUIComponent());
+        super(new TestRecipeGUIComponent());
     }
 
     @Override
